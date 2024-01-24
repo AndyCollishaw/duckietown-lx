@@ -11,8 +11,8 @@ def get_motor_left_matrix(shape: Tuple[int, int]) -> np.ndarray:
     #res[301:, 50:400] = 0.8
     #res[301:, 400:590] = -1
     res[160:320, 160:320] = 0.1
-    res[320:440, 40:320] = 0.5
-    res[440:, 0:] = -1
+    res[320:400, 40:320] = 0.3
+    res[400:, 0:] = -1
     # ---
     return res
 
@@ -25,7 +25,7 @@ def get_motor_right_matrix(shape: Tuple[int, int]) -> np.ndarray:
     #res[301:, 400:590] = 0.8
     #res[301:, 50:400] = -1
     res[160:320, 320:480] = 0.1
-    res[320:440, 320:600] = 0.5
-    res[440:, 0:] = -0.8
+    res[320:400, 320:600] = 0.3
+    res[400:, 0:] = -0.8
     # ---
     return res
